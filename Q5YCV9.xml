@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<uniprot xmlns="http://uniprot.org/uniprot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd">
+<entry dataset="Swiss-Prot" created="2005-02-15" modified="2021-06-02" version="85">
+<accession>Q5YCV9</accession>
+<name>TAU_HYLLA</name>
+<protein>
+<recommendedName>
+<fullName>Microtubule-associated protein tau</fullName>
+</recommendedName>
+</protein>
+<gene>
+<name type="primary">MAPT</name>
+</gene>
+<organism>
+<name type="scientific">Hylobates lar</name>
+<name type="common">Common gibbon</name>
+<name type="synonym">White-handed gibbon</name>
+<dbReference type="NCBI Taxonomy" id="9580"/>
+<lineage>
+<taxon>Eukaryota</taxon>
+<taxon>Metazoa</taxon>
+<taxon>Chordata</taxon>
+<taxon>Craniata</taxon>
+<taxon>Vertebrata</taxon>
+<taxon>Euteleostomi</taxon>
+<taxon>Mammalia</taxon>
+<taxon>Eutheria</taxon>
+<taxon>Euarchontoglires</taxon>
+<taxon>Primates</taxon>
+<taxon>Haplorrhini</taxon>
+<taxon>Catarrhini</taxon>
+<taxon>Hylobatidae</taxon>
+<taxon>Hylobates</taxon>
+</lineage>
+</organism>
+<reference key="1">
+<citation type="journal article" date="2004" name="Gene" volume="341" first="313" last="322">
+<title>Tau gene (MAPT) sequence variation among primates.</title>
+<authorList>
+<person name="Holzer M."/>
+<person name="Craxton M."/>
+<person name="Jakes R."/>
+<person name="Arendt T."/>
+<person name="Goedert M."/>
+</authorList>
+<dbReference type="PubMed" id="15474313"/>
+<dbReference type="DOI" id="10.1016/j.gene.2004.07.013"/>
+</citation>
+<scope>NUCLEOTIDE SEQUENCE [GENOMIC DNA]</scope>
+</reference>
+<comment type="function">
+<text evidence="1">Promotes microtubule assembly and stability, and might be involved in the establishment and maintenance of neuronal polarity. The C-terminus binds axonal microtubules while the N-terminus binds neural plasma membrane components, suggesting that tau functions as a linker protein between both. Axonal polarity is predetermined by tau localization (in the neuronal cell) in the domain of the cell body defined by the centrosome. The short isoforms allow plasticity of the cytoskeleton whereas the longer isoforms may preferentially play a role in its stabilization (By similarity).</text>
+</comment>
+<comment type="subunit">
+<text evidence="2 3 4">Interacts with MARK1, MARK2, MARK3 AND MARK4 (By similarity). Interacts with SQSTM1 when polyubiquitinated (By similarity). Interacts with PSMC2 through SQSTM1 (By similarity). Interacts with FKBP4 (By similarity). Binds to CSNK1D (By similarity). Interacts with SGK1 (By similarity). Interacts with EPM2A; the interaction dephosphorylates MAPT at Ser-396 (By similarity). Interacts with PIN1 (By similarity). Interacts with LRRK2 (By similarity). Interacts with LRP1, leading to endocytosis; this interaction is reduced in the presence of LRPAP1/RAP (By similarity).</text>
+</comment>
+<comment type="subcellular location">
+<subcellularLocation>
+<location evidence="2">Cytoplasm</location>
+<location evidence="2">Cytosol</location>
+</subcellularLocation>
+<subcellularLocation>
+<location evidence="2">Cell membrane</location>
+<topology evidence="2">Peripheral membrane protein</topology>
+<orientation evidence="2">Cytoplasmic side</orientation>
+</subcellularLocation>
+<subcellularLocation>
+<location evidence="2">Cytoplasm</location>
+<location evidence="2">Cytoskeleton</location>
+</subcellularLocation>
+<subcellularLocation>
+<location evidence="2">Cell projection</location>
+<location evidence="2">Axon</location>
+</subcellularLocation>
+<subcellularLocation>
+<location evidence="2">Cell projection</location>
+<location evidence="2">Dendrite</location>
+</subcellularLocation>
+<text evidence="2">Mostly found in the axons of neurons, in the cytosol and in association with plasma membrane components.</text>
+</comment>
+<comment type="domain">
+<text evidence="1">The tau/MAP repeat binds to tubulin.</text>
+</comment>
+<comment type="PTM">
+<text evidence="1">Polyubiquitinated. Requires functional TRAF6 and may provoke SQSTM1-dependent degradation by the proteasome (By similarity).</text>
+</comment>
+<comment type="PTM">
+<text evidence="1 2">Phosphorylation at various serine and threonine residues in S-P or T-P motifs by proline-directed protein kinases (PDPK1, CDK1, CDK5, GSK3, MAPK) (a few sites per protein in interphase, more in mitosis), and at serine residues in K-X-G-S motifs by MAP/microtubule affinity-regulating kinase (MARK1, MARK2, MARK3 or MARK4), causing detachment from microtubules, and their disassembly (By similarity). Phosphorylation at Ser-597 by BRSK1 and BRSK2 in neurons affects ability to bind microtubules and plays a role in neuron polarization. Phosphorylated by PHK. Dephosphorylation at several serine and threonine residues by the serine/threonine phosphatase PPP5C (By similarity).</text>
+</comment>
+<dbReference type="EMBL" id="AY574163">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574154">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574155">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574156">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574157">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574158">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574159">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574160">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574161">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574162">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574150">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574151">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574152">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="EMBL" id="AY574153">
+<property type="protein sequence ID" value="AAS91775.2"/>
+<property type="status" value="JOINED"/>
+<property type="molecule type" value="Genomic_DNA"/>
+</dbReference>
+<dbReference type="BMRB" id="Q5YCV9"/>
+<dbReference type="PRIDE" id="Q5YCV9"/>
+<dbReference type="GO" id="GO:0030424">
+<property type="term" value="C:axon"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0005737">
+<property type="term" value="C:cytoplasm"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0005829">
+<property type="term" value="C:cytosol"/>
+<property type="evidence" value="ECO:0000501"/>
+<property type="project" value="UniProtKB-SubCell"/>
+</dbReference>
+<dbReference type="GO" id="GO:0030425">
+<property type="term" value="C:dendrite"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0030426">
+<property type="term" value="C:growth cone"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0005874">
+<property type="term" value="C:microtubule"/>
+<property type="evidence" value="ECO:0000501"/>
+<property type="project" value="UniProtKB-KW"/>
+</dbReference>
+<dbReference type="GO" id="GO:0005886">
+<property type="term" value="C:plasma membrane"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0045298">
+<property type="term" value="C:tubulin complex"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0008017">
+<property type="term" value="F:microtubule binding"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0000226">
+<property type="term" value="P:microtubule cytoskeleton organization"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0045773">
+<property type="term" value="P:positive regulation of axon extension"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="GO" id="GO:0031116">
+<property type="term" value="P:positive regulation of microtubule polymerization"/>
+<property type="evidence" value="ECO:0000250"/>
+<property type="project" value="UniProtKB"/>
+</dbReference>
+<dbReference type="InterPro" id="IPR001084">
+<property type="entry name" value="MAP_tubulin-bd_rpt"/>
+</dbReference>
+<dbReference type="InterPro" id="IPR002955">
+<property type="entry name" value="Tau"/>
+</dbReference>
+<dbReference type="Pfam" id="PF00418">
+<property type="entry name" value="Tubulin-binding"/>
+<property type="match status" value="4"/>
+</dbReference>
+<dbReference type="PRINTS" id="PR01261">
+<property type="entry name" value="TAUPROTEIN"/>
+</dbReference>
+<dbReference type="PROSITE" id="PS00229">
+<property type="entry name" value="TAU_MAP_1"/>
+<property type="match status" value="4"/>
+</dbReference>
+<dbReference type="PROSITE" id="PS51491">
+<property type="entry name" value="TAU_MAP_2"/>
+<property type="match status" value="4"/>
+</dbReference>
+<proteinExistence type="inferred from homology"/>
+<keyword id="KW-0007">Acetylation</keyword>
+<keyword id="KW-1003">Cell membrane</keyword>
+<keyword id="KW-0966">Cell projection</keyword>
+<keyword id="KW-0963">Cytoplasm</keyword>
+<keyword id="KW-0206">Cytoskeleton</keyword>
+<keyword id="KW-1017">Isopeptide bond</keyword>
+<keyword id="KW-0472">Membrane</keyword>
+<keyword id="KW-0488">Methylation</keyword>
+<keyword id="KW-0493">Microtubule</keyword>
+<keyword id="KW-0597">Phosphoprotein</keyword>
+<keyword id="KW-0677">Repeat</keyword>
+<keyword id="KW-0832">Ubl conjugation</keyword>
+<feature type="initiator methionine" description="Removed" evidence="2">
+<location>
+<position position="1"/>
+</location>
+</feature>
+<feature type="chain" description="Microtubule-associated protein tau" id="PRO_0000072740">
+<location>
+<begin position="2"/>
+<end position="776"/>
+</location>
+</feature>
+<feature type="repeat" description="Tau/MAP 1" evidence="5">
+<location>
+<begin position="579"/>
+<end position="609"/>
+</location>
+</feature>
+<feature type="repeat" description="Tau/MAP 2" evidence="5">
+<location>
+<begin position="610"/>
+<end position="640"/>
+</location>
+</feature>
+<feature type="repeat" description="Tau/MAP 3" evidence="5">
+<location>
+<begin position="641"/>
+<end position="671"/>
+</location>
+</feature>
+<feature type="repeat" description="Tau/MAP 4" evidence="5">
+<location>
+<begin position="672"/>
+<end position="703"/>
+</location>
+</feature>
+<feature type="region of interest" description="Disordered" evidence="6">
+<location>
+<begin position="1"/>
+<end position="608"/>
+</location>
+</feature>
+<feature type="compositionally biased region" description="Basic and acidic residues" evidence="6">
+<location>
+<begin position="1"/>
+<end position="20"/>
+</location>
+</feature>
+<feature type="compositionally biased region" description="Basic and acidic residues" evidence="6">
+<location>
+<begin position="179"/>
+<end position="193"/>
+</location>
+</feature>
+<feature type="compositionally biased region" description="Basic and acidic residues" evidence="6">
+<location>
+<begin position="202"/>
+<end position="218"/>
+</location>
+</feature>
+<feature type="compositionally biased region" description="Basic and acidic residues" evidence="6">
+<location>
+<begin position="382"/>
+<end position="397"/>
+</location>
+</feature>
+<feature type="compositionally biased region" description="Polar residues" evidence="6">
+<location>
+<begin position="530"/>
+<end position="546"/>
+</location>
+</feature>
+<feature type="modified residue" description="N-acetylalanine" evidence="2">
+<location>
+<position position="2"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphotyrosine" evidence="2">
+<location>
+<position position="18"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphotyrosine" evidence="3">
+<location>
+<position position="29"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="4">
+<location>
+<position position="46"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="4">
+<location>
+<position position="61"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="3">
+<location>
+<position position="69"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="4">
+<location>
+<position position="71"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="3">
+<location>
+<position position="111"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="396"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="2">
+<location>
+<position position="470"/>
+</location>
+</feature>
+<feature type="modified residue" description="Omega-N-methylarginine" evidence="3">
+<location>
+<position position="472"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6,N6-dimethyllysine; alternate" evidence="3">
+<location>
+<position position="480"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="480"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="3">
+<location>
+<position position="486"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="3">
+<location>
+<position position="492"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="2">
+<location>
+<position position="498"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="3">
+<location>
+<position position="502"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="3">
+<location>
+<position position="526"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="3">
+<location>
+<position position="530"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphotyrosine" evidence="2">
+<location>
+<position position="532"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="533"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="534"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="537"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="2">
+<location>
+<position position="540"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="2">
+<location>
+<position position="547"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="549"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="2">
+<location>
+<position position="552"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine" evidence="3">
+<location>
+<position position="560"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="2">
+<location>
+<position position="566"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="570"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="572"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="594"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-methyllysine; alternate" evidence="3">
+<location>
+<position position="594"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="597"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="616"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="620"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="624"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine" evidence="3">
+<location>
+<position position="625"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="628"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="633"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="640"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6,N6-dimethyllysine; alternate" evidence="3">
+<location>
+<position position="646"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="646"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="652"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="656"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="659"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="666"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="678"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="682"/>
+</location>
+</feature>
+<feature type="modified residue" description="Omega-N-methylarginine" evidence="3">
+<location>
+<position position="684"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="687"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="691"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="704"/>
+</location>
+</feature>
+<feature type="modified residue" description="N6-acetyllysine; alternate" evidence="3">
+<location>
+<position position="720"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphotyrosine" evidence="3">
+<location>
+<position position="729"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="731"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="735"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="3">
+<location>
+<position position="738"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="739"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="744"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="751"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphoserine" evidence="2">
+<location>
+<position position="757"/>
+</location>
+</feature>
+<feature type="modified residue" description="Phosphothreonine" evidence="2">
+<location>
+<position position="762"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)" evidence="3">
+<location>
+<position position="44"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)" evidence="2">
+<location>
+<position position="589"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="594"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)" evidence="3">
+<location>
+<position position="602"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="616"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="633"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="2">
+<location>
+<position position="646"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="652"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="656"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="666"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="678"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="682"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)" evidence="2">
+<location>
+<position position="688"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="704"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)" evidence="3">
+<location>
+<position position="710"/>
+</location>
+</feature>
+<feature type="cross-link" description="Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate" evidence="3">
+<location>
+<position position="720"/>
+</location>
+</feature>
+<evidence key="1" type="ECO:0000250"/>
+<evidence key="2" type="ECO:0000250">
+<source>
+<dbReference type="UniProtKB" id="P10636"/>
+</source>
+</evidence>
+<evidence key="3" type="ECO:0000250">
+<source>
+<dbReference type="UniProtKB" id="P10637"/>
+</source>
+</evidence>
+<evidence key="4" type="ECO:0000250">
+<source>
+<dbReference type="UniProtKB" id="P19332"/>
+</source>
+</evidence>
+<evidence key="5" type="ECO:0000255">
+<source>
+<dbReference type="PROSITE-ProRule" id="PRU00824"/>
+</source>
+</evidence>
+<evidence key="6" type="ECO:0000256">
+<source>
+<dbReference type="SAM" id="MobiDB-lite"/>
+</source>
+</evidence>
+<sequence length="776" mass="81013" checksum="3D000CC44E78B06D" modified="2007-01-23" version="4">MAEPRQEFDVMEDHAGTYGLGDRKDQGGYTMLQDQEGDTDAGLKESPLQTPAEDGSEEPGSETSDAKSTPTAEDVTAPLVDEGAPXKQAAAQPHTEIPEGTTAEEAGIGDTPSLEDEAAGHVTQEPESGKVVREGFLGEPGPRSXSHQLASGMPGAPLLPEGPREATRQPSGTGPEDTEGGRHAPELLKHQLLGDLHQEGPPLKRAGGKERPGIKEEVDEDRDVDESSPQDSPPSKVSPAHDGRPPQTAAREATSIPGFPAEGAIPLPVDFLSKVSTEIPASEPDGPSAGRAEGQDAPPEFTFHVEITPNVQKEQAHSEEHLGRAAFPGAPGEGPEAQGPSLGEDTKEADLPEPSEKQPAAAPRGKPISRVPQLKARMVSKSKDGTGSDDKKAKTSTRSSAKTLKNRPCLSPKHPTPGSSDPLIQPSSPAVCPEPPSSPKYVSSVTXRTGSSGAKEMKLKGADGKTKIATPRGAAPPGQKGQANATRIPAKTPPAPKTPPSSVTKQVQRRPPPAGPKSERGEPPKSGDRSGYSSPGSPGTPGSRSRTPSLPTPPTREPKKVAVVRTPPKSPSSAKSRLQTAPVPMPDLKNVKSKIGSTENLKHQPGGGKVQIINKKLDLSNVQSKCGSKDNIKHVPGGGSVQIVYKPVDLSKVTSKCGSLGNIHHKPGGGQVEVKSEKLDFKDRVQSKIGSLDNITHVPGGGNKKIETHKLTFRENAKAKTDHGAEIVYKSPVVSGDTSPRHLSNVSSTGSIDMVDSPQLATLADEVSASLAKQGL</sequence>
+</entry>
+<copyright>
+Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+Distributed under the Creative Commons Attribution (CC BY 4.0) License
+</copyright>
+</uniprot>
