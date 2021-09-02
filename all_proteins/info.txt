@@ -1,0 +1,36 @@
+Output Files for all proteins from proteins.faa minus the following:
+
+No Sequence Found:
+scaffold11486 (Australian saltwater crocodile - 761aa)
+JL1528 (Japanese arctic lamprey - 864aa)
+scaffold43622 (Australian saltwater crocodile - 1947aa)
+XP_01266736 (small-eared galago - 1119aa)
+
+Nucleotide Sequences (from nuccore):
+
+<Protein>
+- <Description of Returned Sequence>
+
+GL477576 (sea lamprey - 864aa)
+- nucleotide sequence (210407 nucleotides) for Petromyzon marinus (correct)
+- Should have 846aa
+
+KE993814 (arctic lamprey - 196aa)
+- nucleotide sequence (1564372 nucleotides) for Lethenteron camtschaticum
+  (correct)
+- Should have 196aa
+
+NW_003943621 (Bolivian squirrel monkey - 1122aa)
+- nucleotide sequence (30262601 nucleotides) for Saimiri boliviensis
+  (correct)
+- Should have 1122aa
+
+Note: The following 2 proteins from nuccore were included in this result:
+
+CT004140 (Japanese inshore hagfish - 243aa)
+- mRNA Sequence (837 nucleotides) for homo sapiens
+- should be 243aa japanese inshore hagfish
+
+BAHO01035973 (African coelacanth - 2118aa)
+- nucleotide sequence (15919 nucleotides) for Latimeria chalumnae (correct)
+- Should have 2118 aa

@@ -1,2 +1,8 @@
+# Python Stuff
 .ipynb_checkpoints/
+
+# Mac OSX Stuff
 .DS_Store
+
+# vim stuff
+*.swp
