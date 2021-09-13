@@ -1,5 +1,6 @@
 # Python Stuff
 .ipynb_checkpoints/
+__pycache__/
 
 # Mac OSX Stuff
 .DS_Store
