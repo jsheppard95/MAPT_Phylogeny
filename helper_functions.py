@@ -6,6 +6,8 @@ import requests
 import json
 import xmltodict
 import os
+import time
+import numpy as np
 
 # Function to perform API call and return Python Dictionary containing data
 def api_call(db, protein):
@@ -50,6 +52,43 @@ def api_call(db, protein):
     os.remove(json_file)
 
     return data
+
+
+def get_gids_sequences(protein_df):
+    """
+    Function to get GID numbers and Sequences for protein accession numbers
+    contained in protein_df and append this data as new colums to the same
+    dataframe
+    """
+    gids = []
+    dbs = []
+    seqs = []
+    for i in range(len(protein_df)):
+        print("Protein %s of %s" % (i + 1, len(protein_df)), end="\r")
+        # Wait 1 sec every 3 calls to not bog down servers
+        if (i+1) % 3 == 0:
+            time.sleep(1)
+        protein = protein_df.iloc[i]["accession_num"]
+        # First search NCBI DB=protein
+        db = "protein"
+        result = api_call(db, protein)
+        try:
+            gid = result["eSummaryResult"]["DocSum"]["Id"]
+            gids.append(gid)
+            dbs.append(db)
+        except KeyError:
+            try:
+                db = "nuccore"
+                result = api_call(db, protein)
+                gid = result["eSummaryResult"]["DocSum"]["Id"]
+                gids.append(gid)
+                dbs.append(db)
+            except KeyError:
+                gids.append(np.NaN)
+                dbs.append(None)
+    protein_df["DB"] = dbs
+    protein_df["GID"] = gids
+    return protein_df
 
 
 def show_NaN_rows(df):
