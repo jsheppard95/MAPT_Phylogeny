@@ -69,4 +69,4 @@ def get_sequence_and_count(protein_df, protein):
     seq = ""
     for i in range(1, len(seq_array)):
         seq += seq_array[i]
-    return (len(seq), seq_raw)
+    return (len(seq), seq_raw, seq)
