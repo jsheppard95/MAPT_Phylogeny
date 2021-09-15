@@ -74,20 +74,27 @@ def get_gids_sequences(protein_df):
         result = api_call(db, protein)
         try:
             gid = result["eSummaryResult"]["DocSum"]["Id"]
-            gids.append(gid)
-            dbs.append(db)
         except KeyError:
+            # if error, search NCBI DB=nuccore
             try:
                 db = "nuccore"
                 result = api_call(db, protein)
                 gid = result["eSummaryResult"]["DocSum"]["Id"]
-                gids.append(gid)
-                dbs.append(db)
+            # If still error, return None
             except KeyError:
-                gids.append(np.NaN)
-                dbs.append(None)
+                db = None
+                gid = np.NaN
+        if gid is not np.NaN:
+            gid_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=sequences&id=" + gid + "&rettype=fasta&retmode=text"
+            seq = requests.get(gid_url).content.decode("utf-8")
+            seqs.append(seq)
+        else:
+            seqs.append(np.NaN)
+        gids.append(gid)
+        dbs.append(db)
     protein_df["DB"] = dbs
     protein_df["GID"] = gids
+    protein_df["Sequence"] = seqs
     return protein_df
 
 
