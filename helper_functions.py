@@ -105,14 +105,17 @@ def show_NaN_rows(df):
     return df_NaN
 
 
-# Helper function to get a protein sequence and its length
-def get_sequence_and_count(protein_df, protein):
+def get_fasta_from_df(protein_df, protein):
     protein_indeces = protein_df.index
     idx_array = protein_indeces[protein_df["accession_num"] == protein]
     idx = idx_array[0]
     seq_raw = protein_df[protein_df["accession_num"] == protein]["Sequence"][idx]
-    seq_array = seq_raw.split("\n")
+    return seq_raw
+
+
+def convert_fasta_to_str(fasta_seq):
+    seq_array = fasta_seq.split("\n")
     seq = ""
     for i in range(1, len(seq_array)):
         seq += seq_array[i]
-    return (len(seq), seq_raw, seq)
+    return seq
