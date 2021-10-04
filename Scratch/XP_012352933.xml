@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>821025767</Id>
+	<Item Name="Caption" Type="String">XP_012352933</Item>
+	<Item Name="Title" Type="String">PREDICTED: microtubule-associated protein tau [Nomascus leucogenys]</Item>
+	<Item Name="Extra" Type="String">gi|821025767|ref|XP_012352933.1|[821025767]</Item>
+	<Item Name="Gi" Type="Integer">821025767</Item>
+	<Item Name="CreateDate" Type="String">2015/05/13</Item>
+	<Item Name="UpdateDate" Type="String">2015/05/13</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">61853</Item>
+	<Item Name="Length" Type="Integer">776</Item>
+	<Item Name="Status" Type="String">suppressed</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[ This record was removed as a result of standard genome annotation processing. Please see www.ncbi.nlm.nih.gov/genome/annotation_euk/process/ for more information. ]]></Item>
+	<Item Name="AccessionVersion" Type="String">XP_012352933.1</Item>
+</DocSum>
+
+</eSummaryResult>

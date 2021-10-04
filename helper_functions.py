@@ -89,6 +89,8 @@ def get_gids_sequences(protein_df):
             seq = requests.get(gid_url).content.decode("utf-8")
             seqs.append(seq)
         else:
+            print(protein)
+            print(result)
             seqs.append(np.NaN)
         gids.append(gid)
         dbs.append(db)
@@ -119,3 +121,15 @@ def convert_fasta_to_str(fasta_seq):
     for i in range(1, len(seq_array)):
         seq += seq_array[i]
     return seq
+
+
+def remove_subset_from_df(df, df_subset):
+    """
+    Function to filter a dataframe, df, by specifying
+    the rows to be removed as a second dateframe which
+    is a subset of the first, df_subset
+    """
+    merged_df = df.merge(df_subset, how="left", indicator=True)
+    filtered_df = merged_df[merged_df["_merge"] == "left_only"]
+    filtered_df = filtered_df.drop("_merge", axis=1)
+    return filtered_df
