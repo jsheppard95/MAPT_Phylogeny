@@ -1,0 +1,97 @@
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 3003 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 77.34%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 5 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 3003
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: AUTO
+Using fixed base frequencies
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC -f a -# 5 -m PROTGAMMAAUTO -p 12345 -x 12345 -s proteins_aligned.phy -n tau_phylo.tree 
+
+
+Automatic protein model assignment algorithm using ML criterion:
+
+	Partition: 0 best-scoring AA model: JTT likelihood -100785.533499 with empirical base frequencies
+
+
+Automatic protein model assignment algorithm using ML criterion:
+
+	Partition: 0 best-scoring AA model: JTT likelihood -100785.532922 with empirical base frequencies
+
+
+
+Time for BS model parameter optimization 1664.150966
+Bootstrap[0]: Time 2251.087927 seconds, bootstrap likelihood -99352.342697, best rearrangement setting 13
+Bootstrap[1]: Time 529.711996 seconds, bootstrap likelihood -98876.246798, best rearrangement setting 13
+Bootstrap[2]: Time 495.359398 seconds, bootstrap likelihood -97575.938848, best rearrangement setting 12
+Bootstrap[3]: Time 508.925493 seconds, bootstrap likelihood -100464.848052, best rearrangement setting 15
+Bootstrap[4]: Time 472.538587 seconds, bootstrap likelihood -103676.947324, best rearrangement setting 10
+
+
+Overall Time for 5 Rapid Bootstraps 4257.918691 seconds
+Average Time per Rapid Bootstrap 851.583738 seconds
+
+Starting ML Search ...
+
+Automatic protein model assignment algorithm using ML criterion:
+
+	Partition: 0 best-scoring AA model: JTT likelihood -100784.264765 with empirical base frequencies
+
+
+Automatic protein model assignment algorithm using ML criterion:
+
+	Partition: 0 best-scoring AA model: JTT likelihood -100784.109924 with empirical base frequencies
+
+
+Fast ML optimization finished
+
+Fast ML search Time: 4090.985884 seconds
+
+Automatic protein model assignment algorithm using ML criterion:
+
+	Partition: 0 best-scoring AA model: JTT likelihood -100692.785154 with empirical base frequencies
+
+
+Automatic protein model assignment algorithm using ML criterion:
+
+	Partition: 0 best-scoring AA model: JTT likelihood -100692.740053 with empirical base frequencies
+
+
