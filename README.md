@@ -10,8 +10,8 @@ Useful Resources:
     - Documentation: https://petrov.stanford.edu/software/src/muscle3.6/muscle3.6.html
     - Python CLI API Tool: https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/MUSCLE+Help+and+Documentation
     - Binary: http://www.drive5.com/muscle/downloads.htm
-
 - NCBI Multiple Sequence Alignment (MSA) Viewer: https://www.ncbi.nlm.nih.gov/tools/msaviewer/
+- Protein BLAST Sequence Alignment (blastp): https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 Usefule Commands:
 Running MUSCLE MSA binary:
