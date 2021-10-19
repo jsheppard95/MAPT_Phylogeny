@@ -12,6 +12,7 @@ Useful Resources:
     - Binary: http://www.drive5.com/muscle/downloads.htm
 - NCBI Multiple Sequence Alignment (MSA) Viewer: https://www.ncbi.nlm.nih.gov/tools/msaviewer/
 - Protein BLAST Sequence Alignment (blastp): https://blast.ncbi.nlm.nih.gov/Blast.cgi
+- biopython: https://github.com/biopython/biopython
 
 Usefule Commands:
 Running MUSCLE MSA binary:
