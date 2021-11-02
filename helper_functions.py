@@ -89,6 +89,7 @@ def get_gids_sequences(protein_df):
             seq = requests.get(gid_url).content.decode("utf-8")
             seqs.append(seq)
         else:
+            print("\n")
             print(protein)
             print(result)
             seqs.append(np.NaN)
