@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from Bio import SeqIO
 
-# Red in LIB Sequence file
+# Read in LIB Sequence file
 infile = os.path.join("MAPT_Morgan", "Morgan_MAP-phylo_Proteins-296.LIB")
 record_dict = SeqIO.to_dict(SeqIO.parse(infile, "fasta"))
 print("Number of Records:", len(record_dict))
