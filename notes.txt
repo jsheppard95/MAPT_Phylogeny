@@ -1,0 +1,30 @@
+Fig 1. Gene Organization and transcript variants of human MAPs with tau-like
+MTBDs.
+
+a) 
+- Chromosal loci and genetic linkage maos if human MAPT, MAP2, and MAP4,
+including MAPT-IT1 and STH within the MAPT gene.
+- Segmental chromosome duplications 17 <-> 2 and 17 <-> 3 formed paralogous
+gene pairs MAPT-KANSL1 and MAPT-KANSL1L
+- MAPT Chromosome 17 (NC_000017.11):
+  - https://www.ncbi.nlm.nih.gov/nuccore/NC_000017.11/
+  - Paper_Figures/NC_000017.11[45620344..46225374].pdf
+    - https://www.ncbi.nlm.nih.gov/nuccore/568815581?report=graph&tkey=UngwVV1aVl9YUVxTd2ZDX2UtPzAYIyMbDzAvBSaxBXkMbB0lYkpOInlxZHt-Tw1_fhs&assm_context=GCF_000001405.40&mk=45620344|45620344|blue|9,46225374|46225374|red|9&v=45528580:46344828&c=969696&select=null&slim=0
+- MAP2 Chromosome 2 (NC_000002.12):
+  - https://www.ncbi.nlm.nih.gov/nuccore/NC_000002.12/
+  - Paper_Figures/NC_000002.12[209178804..210171344].pdf
+    - https://www.ncbi.nlm.nih.gov/nuccore/568815596?report=graph&tkey=By1lAAgPAwoNBAkGIjMWCjB4amVNdnZOWmV6UHPkUCxZu0jV7WAhCLkO7qT0kIeg9MQ&assm_context=GCF_000001405.40&v=209178804:210171344&c=993300&select=null&slim=0
+- MAP4 Chromosome 3 (NC_000003.12)
+  - https://www.ncbi.nlm.nih.gov/nuccore/NC_000003.12/
+  - https://www.ncbi.nlm.nih.gov/nuccore/568815595?report=graph&tkey=GTN7HhYRHRQTGhcYPC0IFC5mdHtTaGhQRHtkTm36TjJHblZIdZdD_9QDK38xS0J7MR8&assm_context=GCF_000001405.40&v=47585888:48188311&c=000000&select=null&slim=0
+
+c) MAPT Transcript variants
+- MAPT v1-Hsa 2N4R: https://www.rcsb.org/structure/2N4R
+- MAPT v3-Hsa 0N4R: https://www.rcsb.org/structure/7QKY
+- MAPT v4-Hsa 0N3R: https://www.ncbi.nlm.nih.gov/protein/1680429349
+- MAPT v5-Hsa 1N4R: https://www.rcsb.org/structure/1N4R
+- MAPT v6-Hsa 2N4R: https://www.rcsb.org/structure/2N4R
+- MAPT v7-Hsa 1N3R: https://www.rcsb.org/structure/1N3R
+- MAPT v8-Hsa 2N3R: https://www.rcsb.org/structure/2N3R
+
+Fig 3. Phylogenetic Analysis of Proteins with Tau-like MTBDs
