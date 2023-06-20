@@ -24,22 +24,55 @@ fname = os.path.join("TreeBASE", "1_1458651913_MAP-102x1953_ExaBayesConsensusEMR
 #     ...
 #
 # ;
+header = {}
+aligned_seqs = {}
 with open(fname, "r") as f:
     line = f.readline()
     seq_header = False
     seq_data = False
     while line != "":
         line = f.readline()
+
+        # Identify Aligned Sequence Section
         if line == "BEGIN CHARACTERS;\n":
             seq_header = True
+            line = f.readline()
         elif "MATRIX" in line:
             seq_header = False
             seq_data = True
+            line = f.readline()
+
+        # Read Nexus file flags
         if seq_header:
             line_list = line.split()
-            print(line_list)
-        elif seq_data:
-            print(line[:79])
-        if line == "END;\n":
-            seq_data = False
+            # Remove ";" from end string
+            line_list[-1] = line_list[-1][:-1]
 
+            if line_list[0] == "FORMAT":
+                header[line_list[0] + line_list[1]] = line_list[3]
+                header[line_list[4]] = line_list[6]
+                header[line_list[7]] = line_list[9]
+            else:
+                header[line_list[0]] = line_list[1]
+
+        elif seq_data:
+            # Remove leading \t
+            line = line[1:]
+            if len(line) > 0:
+                if line[0] == "'":
+                    # e.g 'Homo sapiens XP_011509496'   MADER...
+                    line_list = line.split("'")
+                    # Remove first item - empty string
+                    line_list.pop(0)
+                    # Remove leading white space and \n from sequence
+                    line_list[1] = line_list[1].strip()
+                else:
+                    # e.g Villosa_lienosa_MAP_JR498090  -----...
+                    line_list = line.split()
+                aligned_seqs[line_list[0]] = line_list[1]
+            else:
+                # finshed reading sequences
+                seq_data = False
+
+print(header)
+print(aligned_seqs)
