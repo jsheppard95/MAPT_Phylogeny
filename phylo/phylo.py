@@ -80,9 +80,6 @@ def take(n, iterable):
     """Return the first n items of the iterable as a list."""
     return list(islice(iterable, n))
 
-print(take(10, header.items()))
-#print(take(10, aligned_seqs.items()))
-
 # Write sequences to output file in PHYLIP (*.phy) format.
 print("1st Sequence Lenghth:", len(aligned_seqs["Homo sapiens XP_011509496"]))
 print("2nd Sequence Lenghth:", len(aligned_seqs["Nomascus leucogenys XP_012357075"]))
@@ -98,7 +95,6 @@ for id in species:
     elif "_" in id:
         new_id = id.replace("_", "-")
         aligned_seqs[new_id] = aligned_seqs.pop(id)
-#print(take(30, aligned_seqs.items()))
 
 # Check for unique species names for PHYLIP file
 SPECIES_NAME_LEN = 10
@@ -115,7 +111,6 @@ print("Unique:", unique_ids)
 
 # Confirmed unique keys, update sequence dictionary
 for id in species:
-#    print(id)
     id_spl = id.split("-")
     new_id = id_spl[-1][:SPECIES_NAME_LEN]
     aligned_seqs[new_id] = aligned_seqs.pop(id)
@@ -136,7 +131,6 @@ with open(outfile, "w") as f:
     f.write(" " + str(seq_length))
     f.write(" \n")
     for id in aligned_seqs.keys():
-#        print(id)
         if len(id) < SPECIES_NAME_LEN:
             f.write(id + (SPECIES_NAME_LEN-len(id))*" ")
         else:
