@@ -9,6 +9,7 @@ Bayesian consensus phylogenetic tree in Sundermann et al. BMC Genomics (2016)
 17:264 Fig. 2a.
 """
 
+from itertools import islice
 import os
 
 fname = os.path.join("TreeBASE", "1_1458651913_MAP-102x1953_ExaBayesConsensusEMR.nexorg")
@@ -74,5 +75,23 @@ with open(fname, "r") as f:
                 # finshed reading sequences
                 seq_data = False
 
-print(header)
-print(aligned_seqs)
+def take(n, iterable):
+    """Return the first n items of the iterable as a list."""
+    return list(islice(iterable, n))
+
+print(take(10, header.items()))
+#print(take(10, aligned_seqs.items()))
+
+# Write sequences to output file in PHYLIP (*.phy) format.
+print("1st Sequence Lenghth:", len(aligned_seqs["Homo sapiens XP_011509496"]))
+print("2nd Sequence Lenghth:", len(aligned_seqs["Nomascus leucogenys XP_012357075"]))
+print("10th Sequence Lenghth:", len(aligned_seqs["Orcinus orca XP_004262822"]))
+
+# Clean species names:
+# Consistent name format, spaces replaced by underscores
+species = list(aligned_seqs.keys())
+for id in species:
+    if " " in id:
+        new_id = id.replace(" ", "_")
+        aligned_seqs[new_id] = aligned_seqs.pop(id)
+print(aligned_seqs.keys())
