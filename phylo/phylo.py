@@ -10,6 +10,7 @@ Bayesian consensus phylogenetic tree in Sundermann et al. BMC Genomics (2016)
 """
 
 from itertools import islice
+import numpy as np
 import os
 
 fname = os.path.join("TreeBASE", "1_1458651913_MAP-102x1953_ExaBayesConsensusEMR.nexorg")
@@ -86,12 +87,58 @@ print(take(10, header.items()))
 print("1st Sequence Lenghth:", len(aligned_seqs["Homo sapiens XP_011509496"]))
 print("2nd Sequence Lenghth:", len(aligned_seqs["Nomascus leucogenys XP_012357075"]))
 print("10th Sequence Lenghth:", len(aligned_seqs["Orcinus orca XP_004262822"]))
-
+seq_length = len(aligned_seqs["Homo sapiens XP_011509496"])
 # Clean species names:
 # Consistent name format, spaces replaced by underscores
 species = list(aligned_seqs.keys())
 for id in species:
     if " " in id:
-        new_id = id.replace(" ", "_")
+        new_id = id.replace(" ", "-")
         aligned_seqs[new_id] = aligned_seqs.pop(id)
-print(aligned_seqs.keys())
+    elif "_" in id:
+        new_id = id.replace("_", "-")
+        aligned_seqs[new_id] = aligned_seqs.pop(id)
+#print(take(30, aligned_seqs.items()))
+
+# Check for unique species names for PHYLIP file
+SPECIES_NAME_LEN = 10
+species = list(aligned_seqs.keys())
+phyl_ids = []
+for id in species:
+    id_spl = id.split("-")
+    phyl_ids.append(id_spl[-1][:SPECIES_NAME_LEN])
+phyl_ids = np.array(phyl_ids)
+print(len(phyl_ids))
+print(len(np.unique(phyl_ids)))
+unique_ids = len(phyl_ids) == len(np.unique(phyl_ids))
+print("Unique:", unique_ids)
+
+# Confirmed unique keys, update sequence dictionary
+for id in species:
+#    print(id)
+    id_spl = id.split("-")
+    new_id = id_spl[-1][:SPECIES_NAME_LEN]
+    aligned_seqs[new_id] = aligned_seqs.pop(id)
+
+# Write aligned sequences in PHYLIP format - Using Sequential
+# 5 42 
+# Turkey                  AAGCTNGGGCATTTCAGGGTGAGCCCGGGCAATACAGGGTAT 
+# Salmo_schiefermuelleri  AAGCCTTGGCAGTGCAGGGTGAGCCGTGGCCGGGCACGGTAT 
+# H_sapiens               ACCGGTTGGCCGTTCAGGGTACAGGTTGGCCGTTCAGGGTAA 
+# Chimp                   AAACCCTTGCCGTTACGCTTAAACCGAGGCCGGGACACTCAT 
+# Gorilla                 AAACCCTTGCCGGTACGCTTAAACCATTGCCGGTACGCTTAA
+# 5 = # of species, 42 = length of aligned sequences
+# species has 10 character limit - use first 10 characters (unique)
+
+outfile = os.path.join("TreeBASE", "MAPPHY.phy")
+with open(outfile, "w") as f:
+    f.write(str(len(aligned_seqs)))
+    f.write(" " + str(seq_length))
+    f.write(" \n")
+    for id in aligned_seqs.keys():
+#        print(id)
+        if len(id) < SPECIES_NAME_LEN:
+            f.write(id + (SPECIES_NAME_LEN-len(id))*" ")
+        else:
+            f.write(id)
+        f.write(aligned_seqs[id] + "\n")
