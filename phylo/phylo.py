@@ -97,7 +97,7 @@ for id in species:
         aligned_seqs[new_id] = aligned_seqs.pop(id)
 
 # Check for unique species names for PHYLIP file
-SPECIES_NAME_LEN = 10
+SPECIES_NAME_LEN = 9
 species = list(aligned_seqs.keys())
 phyl_ids = []
 for id in species:
@@ -127,7 +127,7 @@ for id in species:
 
 outfile = os.path.join("TreeBASE", "MAPPHY.phy")
 with open(outfile, "w") as f:
-    f.write(str(len(aligned_seqs)))
+    f.write(" " + str(len(aligned_seqs)))
     f.write(" " + str(seq_length))
     f.write(" \n")
     for id in aligned_seqs.keys():

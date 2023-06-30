@@ -10,3 +10,7 @@ Images/
 
 # vim stuff
 *.swp
+*.un~
+
+# ExaBayes Output files
+ExaBayes_info.*
