@@ -134,24 +134,6 @@ for id in species:
 ids = list(aligned_seqs.keys())
 seqs = list(aligned_seqs.values())
 outfile = os.path.join("TreeBASE", "MAPPHY.phy")
-# with open(outfile, "w") as f:
-#     f.write(" " + str(len(aligned_seqs)))
-#     f.write(" " + str(seq_length))
-#     f.write("\n")
-#     for id in aligned_seqs.keys():
-#         if len(id) < SPECIES_NAME_LEN:
-#             f.write(id + (SPECIES_NAME_LEN-len(id))*" ")
-#         else:
-#             f.write(id)
-#         # write taxon-sequence delim
-#         f.write("   ")# + aligned_seqs[id] + "\n")
-#         # Write sequence in AA_CHUNK_LEN-element chunks
-#         for i in range(0, len(aligned_seqs[id]), AA_CHUNK_LEN):
-#             if i % (N_COLS * AA_CHUNK_LEN) == 0:
-#                 f.write("\n")
-#             f.write(aligned_seqs[id][i:i+AA_CHUNK_LEN])
-#             f.write(" ")
-#         f.write("\n")
 
 with open(outfile, "w") as f:
     f.write(" " + str(len(aligned_seqs)))
@@ -159,15 +141,25 @@ with open(outfile, "w") as f:
     f.write("\n")
     seq_start = 0
     seq_stop = AA_CHUNK_LEN*N_COLS
-    for i in range(len(ids)):
-        if len(ids[i]) < SPECIES_NAME_LEN:
-            f.write(ids[i] + (SPECIES_NAME_LEN-len(ids[i]))*" ")
-        else:
-            f.write(ids[i])
-        # write taxon-sequence delim
-        f.write("   ")
-        for j in range(seq_start, seq_stop, AA_CHUNK_LEN):
-            f.write(seqs[i][j:j+AA_CHUNK_LEN])
-            if j != seq_stop - AA_CHUNK_LEN:
-                f.write(" ")
+    write_id = True
+    while seq_start <= seq_length:
+        for i in range(len(ids)):
+            if write_id:
+                if len(ids[i]) < SPECIES_NAME_LEN:
+                    f.write(ids[i] + (SPECIES_NAME_LEN-len(ids[i]))*" ")
+                else:
+                    f.write(ids[i])
+                # write taxon-sequence delim
+                f.write("   ")
+            else:
+                f.write("             ")
+            for j in range(seq_start, seq_stop, AA_CHUNK_LEN):
+                f.write(seqs[i][j:j+AA_CHUNK_LEN])
+                if j != seq_stop - AA_CHUNK_LEN:
+                    f.write(" ")
+            f.write("\n")
         f.write("\n")
+        write_id = False
+        temp = seq_stop
+        seq_stop += AA_CHUNK_LEN*N_COLS
+        seq_start = temp
