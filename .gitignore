@@ -14,3 +14,11 @@ Images/
 
 # ExaBayes Output files
 ExaBayes_info.*
+ExaBayes_binaryAlignment.*
+ExaBayes_checkpoint.*
+ExaBayes_diagnostics.*
+ExaBayes_prevCheckpointBackup.*
+
+# TreeBASE files
+mapt_molec_evo.rdf
+S18990.nex
